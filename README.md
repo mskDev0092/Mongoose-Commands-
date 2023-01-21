@@ -124,7 +124,7 @@ MyModel.countDocuments({ age: { $lt: 21 } });
 
 > This command will count the number of documents in the MyModel collection whose age property is less than 21.
 
-# mongoosh command to create:
+# mongoosh command create():
 
 > To create a document in Mongoose, you can use the create() method. This method takes a single argument, which is an object containing the data for the new document. For example:
 
@@ -134,7 +134,7 @@ MyModel.create({ name: 'John', age: 20 });
 
 > This command will create a new document in the MyModel collection with the name property set to 'John' and the age property set to 20.
 
-# mongoosh command to findOneAndReplace():
+# mongoosh command findOneAndReplace():
 
 > To replace a document in Mongoose, you can use the findOneAndReplace() method. This method takes three arguments: a query object, a replacement document, and an optional options object. For example:
 

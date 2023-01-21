@@ -44,7 +44,7 @@
 
 > The difference between the replace command and the update command in MongoDB is that the replace command replaces the entire document, while the update command only replaces or updates specific fields in the existing document. The replace command can be used if you want to replace the entire document with a new one, while the update command should be used if you only want to modify certain fields of an existing document.
 
-# mongoosh command to find:
+# mongoosh command find():
 
 > To find documents in Mongoose, you can use the find() or findOne() methods. Both methods take a query object as an argument to identify the documents to find. For example:
 

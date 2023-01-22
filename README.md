@@ -1,4 +1,4 @@
-# Mongoosh Commands 
+# Mongoose Commands 
 
 > Mongoose provides a few methods for performing data manipulation operations. These include:
 
@@ -44,7 +44,7 @@
 
 > The difference between the replace command and the update command in MongoDB is that the replace command replaces the entire document, while the update command only replaces or updates specific fields in the existing document. The replace command can be used if you want to replace the entire document with a new one, while the update command should be used if you only want to modify certain fields of an existing document.
 
-# mongoosh command find():
+# mongoose command find():
 
 > To find documents in Mongoose, you can use the find() or findOne() methods. Both methods take a query object as an argument to identify the documents to find. For example:
 
@@ -54,7 +54,7 @@ MyModel.find({ name: 'John' });
 
 > This command will search for documents with the name property of 'John' in the MyModel collection.
 
-# mongoosh command findOne():
+# mongoose command findOne():
 
 > To find a single document in Mongoose, you can use the findOne() method. It takes a query object as an argument to identify the document to find. For example:
 
@@ -64,7 +64,7 @@ MyModel.findOne({ name: 'John' });
 
 > This command will search for the document with the name property of 'John' in the MyModel collection.
 
-# mongoosh command findOneAndUpdate():
+# mongoose command findOneAndUpdate():
 
 > To update a single document in Mongoose, you can use the findOneAndUpdate() method. It takes a query object and an update object as arguments to identify the document to update and the values to update it with. For example:
 
@@ -74,7 +74,7 @@ MyModel.findOneAndUpdate({ name: 'John' }, { age: 21 });
 
 > This command will update the document with the name property of 'John' in the MyModel collection to have the age property set to 21.
 
-# mongoosh command updateOne():
+# mongoose command updateOne():
 
 > To update a single document in Mongoose, you can use the updateOne() method. It takes a query object and an update object as arguments to identify the document to update and the values to update it with. For example:
 
@@ -84,7 +84,7 @@ MyModel.updateOne({ name: 'John' }, { age: 21 });
 
 > This command will update the document with the name property of 'John' in the MyModel collection to have the age property set to 21.
 
-# mongoosh command updateMany():
+# mongoose command updateMany():
 
 > To update multiple documents in Mongoose, you can use the updateMany() method. It takes a query object and an update object as arguments to identify the documents to update and the values to update them with. For example:
 
@@ -94,7 +94,7 @@ MyModel.updateMany({ age: { $lt: 21 } }, { age: 21 });
 
 > This command will update all documents in the MyModel collection whose age property is less than 21 to have the age property set to 21.
 
-# mongoosh command deleteOne():
+# mongoose command deleteOne():
 
 > To delete documents in Mongoose, you can use the deleteOne() or deleteMany() methods. Both methods take a query object as an argument to identify the documents to delete. For example:
 
@@ -104,7 +104,7 @@ MyModel.deleteOne({ name: 'John' });
 
 > This command will delete the document with the name property of 'John' from the MyModel collection.
 
-# mongoosh command deleteMany()
+# mongoose command deleteMany()
 
 > To delete multiple documents in Mongoose, you can use the deleteMany() method. It takes a query object as an argument to identify the documents to delete. For example:
 
@@ -114,7 +114,7 @@ MyModel.deleteMany({ age: { $lt: 21 } });
 
 > This command will delete all documents in the MyModel collection whose age property is less than 21.
 
-# mongoosh command countDocuments():
+# mongoose command countDocuments():
 
 > To count the number of documents in Mongoose, you can use the countDocuments() method. It takes a query object as an argument to identify the documents to count. For example:
 
@@ -124,7 +124,7 @@ MyModel.countDocuments({ age: { $lt: 21 } });
 
 > This command will count the number of documents in the MyModel collection whose age property is less than 21.
 
-# mongoosh command create():
+# mongoose command create():
 
 > To create a document in Mongoose, you can use the create() method. This method takes a single argument, which is an object containing the data for the new document. For example:
 
@@ -134,7 +134,7 @@ MyModel.create({ name: 'John', age: 20 });
 
 > This command will create a new document in the MyModel collection with the name property set to 'John' and the age property set to 20.
 
-# mongoosh command findOneAndReplace():
+# mongoose command findOneAndReplace():
 
 > To replace a document in Mongoose, you can use the findOneAndReplace() method. This method takes three arguments: a query object, a replacement document, and an optional options object. For example:
 
